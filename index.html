@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sala 7</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="d-flex justify-content-between align-items-center p-4">
+    <h1 class="logo m-0">SALA 7</h1>
+    <nav>
+      <ul class="nav gap-4">
+        <li class="nav-item"><a class="nav-link text-black" href="#">Galería</a></li>
+        <li class="nav-item"><a class="nav-link text-black" href="#">Info</a></li>
+        <li class="nav-item"><a class="nav-link text-black" href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero text-center py-5">
+    <div class="container">
+      <h2 class="display-4 fw-bold text-uppercase mb-4 hero-title">
+        Exploring unseen <br> films beyond the mainstream.
+      </h2>
+
+      <!-- Botón circular -->
+<div class="circle-button-dark mx-auto">
+  <span class="circle-text-dark">CONTACT US • CONTACT US • CONTACT US • CONTACT US •</span>
+  <div class="circle-icon-dark">&#8599;</div>
+</div>
+
+    </div>
+
+    <!-- Video decorativo -->
+    <div class="video-container">
+  <video class="w-100" autoplay muted loop playsinline>
+    <source src="img/video-hero.mp4" type="video/mp4">
+    Tu navegador no soporta video HTML5.
+  </video>
+</div>
+
+  </section>
+
+    <!-- SECCION IMAGANES -->
+
+    <!-- Galería de películas -->
+<section class="galeria py-5 container">
+  <!-- Película 1 -->
+  <div class="row mb-5 align-items-center">
+    <div class="col-md-6">
+      <h3 class="mb-1">CENIZA INVISIBLE</h3>
+      <p class="mb-1">2019</p>
+      <p class="text-muted small">Broadcast TV &nbsp; | &nbsp; Experimental, Drama</p>
+    </div>
+    <div class="col-md-6">
+      <img src="img/img1.png" alt="Ceniza Invisible" class="img-fluid galeria-img" data-img="img/img1.jpg">
+    </div>
+  </div>
+
+  <hr class="galeria-separador">
+
+  <!-- Película 2 -->
+  <div class="row mb-5 align-items-center flex-md-row-reverse">
+    <div class="col-md-6">
+      <h3 class="mb-1">ECOS DEL TIEMPO</h3>
+      <p class="mb-1">2022</p>
+      <p class="text-muted small">Online &nbsp; | &nbsp; Documental, Tiempo</p>
+    </div>
+    <div class="col-md-6">
+      <img src="img/img2.jpg" alt="Ecos del Tiempo" class="img-fluid galeria-img" data-img="img/img2.jpg">
+    </div>
+  </div>
+
+  <hr class="galeria-separador">
+
+  <!-- Repite el patrón con las demás películas -->
+  <!-- Película 3 -->
+  <div class="row mb-5 align-items-center">
+    <div class="col-md-6">
+      <h3 class="mb-1">MÁQUINA HUMANA</h3>
+      <p class="mb-1">2021</p>
+      <p class="text-muted small">Online &nbsp; | &nbsp; Sci-Fi, Cuerpo</p>
+    </div>
+    <div class="col-md-6">
+      <img src="img/img3.jpg" alt="Máquina Humana" class="img-fluid galeria-img" data-img="img/img3.jpg">
+    </div>
+  </div>
+
+  <hr class="galeria-separador">
+
+  <!-- Película 4 -->
+  <div class="row mb-5 align-items-center flex-md-row-reverse">
+    <div class="col-md-6">
+      <h3 class="mb-1">LENTO FUEGO</h3>
+      <p class="mb-1">2023</p>
+      <p class="text-muted small">Broadcast TV &nbsp; | &nbsp; Cocina, Ritual</p>
+    </div>
+    <div class="col-md-6">
+      <img src="img/img4.jpg" alt="Lento Fuego" class="img-fluid galeria-img" data-img="img/img4.jpg">
+    </div>
+  </div>
+
+  <hr class="galeria-separador">
+
+  <!-- Película 5 -->
+  <div class="row mb-5 align-items-center">
+    <div class="col-md-6">
+      <h3 class="mb-1">CARRETERA ABIERTA</h3>
+      <p class="mb-1">2022</p>
+      <p class="text-muted small">Cinema &nbsp; | &nbsp; Viajes, Estilo de vida</p>
+    </div>
+    <div class="col-md-6">
+      <img src="img/img5.jpg" alt="Carretera Abierta" class="img-fluid galeria-img" data-img="img/img5.jpg">
+    </div>
+  </div>
+</section>
+
+<!-- Modal para imagen -->
+<div id="imgModal" class="modal-overlay">
+  <span class="modal-close">&times;</span>
+  <img class="modal-content" id="modal-img">
+</div>
+
+
+<!-- Sección de información -->
+<section class="info-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Columna izquierda: texto descriptivo -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <p class="info-text">
+          Sala 7 es un espacio dedicado al cine alternativo, donde celebramos lo no convencional.  
+          Nuestro enfoque es narrativo, visual y profundamente personal.  
+          Más que una página, somos una pantalla para las películas que merecen ser vistas.
+        </p>
+        <button class="btn btn-outline-dark mt-3">Leer más sobre nosotros</button>
+      </div>
+
+      <!-- Columna derecha: frase con imágenes -->
+      <div class="col-md-6">
+        <h2 class="info-title">
+          CINE AUTÉNTICO,  
+          <br>
+          ATEMPORAL 
+          <img src="img/img2.jpg" class="inline-img" alt="fragmento">
+          Y  
+          <br>
+          (ESTÉTICAMENTE  
+          <img src="img/img4.jpg" class="inline-img" alt="fragmento">
+          INTENSO)
+          <br>
+          ES LA FORMA  
+          <img src="img/img3.jpg" class="inline-img" alt="fragmento">
+          SALA 7.
+        </h2>
+      </div>
+    </div>
+  </div>
+
+    <hr class="galeria-separador-seccioninfo">
+
+</section>
+
+<!-- Footer -->
+<footer class="footer-section py-5 mt-5">
+  <div class="container text-center">
+    <h1 class="footer-title">LET’S TALK</h1>
+
+    <div class="row mt-4">
+      <!-- Columna izquierda -->
+      <div class="col-md-4 text-md-start mb-4 mb-md-0">
+        <p class="small m-0">contacto@sala7films.com</p>
+        <p class="small m-0">+34 600 123 456</p>
+        <p class="small m-0">Madrid, España</p>
+      </div>
+
+      <!-- Columna central -->
+      <div class="col-md-4">
+        <p class="small">AND CREATE<br>SOME STUFF<br>TOGETHER</p>
+        <div class="circle-button-dark mx-auto">
+  <span class="circle-text-dark">CONTACT US • CONTACT US • CONTACT US • CONTACT US •</span>
+  <div class="circle-icon-dark">&#8599;</div>
+</div>
+      </div>
+
+      <!-- Columna derecha -->
+      <div class="col-md-4 text-md-end">
+        <ul class="nav justify-content-md-end justify-content-center gap-3">
+          <li><a href="#" class="nav-link px-1 text-black small">WORK</a></li>
+          <li><a href="#" class="nav-link px-1 text-black small">ABOUT</a></li>
+          <li><a href="#" class="nav-link px-1 text-black small">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Marca de agua -->
+  <div class="text-start px-4 mt-4">
+    <span class="watermark">DEV BY DOYXE</span>
+  </div>
+</footer>
+
+
+
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
